@@ -6,13 +6,17 @@ namespace ApiPlatformKPI.Controllers
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("Departamento")]
-    public partial class Departamento
+    public partial class Categorias_Confiabilidad
     {
         public int id { get; set; }
 
-        [Column("Departamento")]
         [StringLength(50)]
-        public string Departamento1 { get; set; }
+        public string Categoria { get; set; }
+
+        public int Tienda { get; set; }
+
+        public int Semana { get; set; }
+
+        public int Año { get; set; }
     }
 }

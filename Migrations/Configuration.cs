@@ -9,7 +9,7 @@ namespace ApiPlatformKPI.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(ApiPlatformKPI.Controllers.ModelKPI context)

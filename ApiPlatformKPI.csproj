@@ -99,18 +99,69 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\Categorias_Confiabilidad.cs" />
     <Compile Include="Controllers\Comodin_Cajeros.cs" />
-    <Compile Include="Controllers\Departamento.cs" />
+    <Compile Include="Controllers\Confiabilidad_Inventarios.cs" />
+    <Compile Include="Controllers\C__MigrationHistory.cs" />
+    <Compile Include="Controllers\Horas_Cajeros.cs" />
     <Compile Include="Controllers\KPIController.cs" />
+    <Compile Include="Controllers\KPI_Nombres_Reportes.cs" />
+    <Compile Include="Controllers\KPI_ProgramaDeli.cs" />
+    <Compile Include="Controllers\KPI_ProgramaFruVer.cs" />
+    <Compile Include="Controllers\KPI_ReporteCajeros.cs" />
+    <Compile Include="Controllers\KPI_ReporteDeli.cs" />
     <Compile Include="Controllers\Log_Usuarios.cs" />
+    <Compile Include="Controllers\Marcajes_Impulsadores.cs" />
+    <Compile Include="Controllers\Margen_Categorias.cs" />
     <Compile Include="Controllers\ModelKPI.cs" />
+    <Compile Include="Controllers\RegistroStaFe.cs" />
     <Compile Include="Controllers\Roles.cs" />
+    <Compile Include="Controllers\Top300Productos.cs" />
+    <Compile Include="Controllers\Top500Productos.cs" />
     <Compile Include="Controllers\Usuarios_KPI.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202212212335235_DeleteField.cs" />
+    <Compile Include="Migrations\202212212335235_DeleteField.Designer.cs">
+      <DependentUpon>202212212335235_DeleteField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212221459234_New.cs" />
+    <Compile Include="Migrations\202212221459234_New.Designer.cs">
+      <DependentUpon>202212221459234_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301181730397_Categorias.cs" />
+    <Compile Include="Migrations\202301181730397_Categorias.Designer.cs">
+      <DependentUpon>202301181730397_Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301240018364_Update.cs" />
+    <Compile Include="Migrations\202301240018364_Update.Designer.cs">
+      <DependentUpon>202301240018364_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301272307558_Documents.cs" />
+    <Compile Include="Migrations\202301272307558_Documents.Designer.cs">
+      <DependentUpon>202301272307558_Documents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301272344288_Documents2.cs" />
+    <Compile Include="Migrations\202301272344288_Documents2.Designer.cs">
+      <DependentUpon>202301272344288_Documents2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202302022034346_UpdateDoc.cs" />
+    <Compile Include="Migrations\202302022034346_UpdateDoc.Designer.cs">
+      <DependentUpon>202302022034346_UpdateDoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Auxiliar_Deli.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Confiabilidad_Inventarios.cs" />
+    <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\Documentacion.cs" />
+    <Compile Include="Models\HQData.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Top300Productos.cs" />
+    <Compile Include="Models\Top500Productos.cs" />
+    <Compile Include="Models\Top500_Listado.cs" />
     <Compile Include="Models\VelocidadCajeros.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -125,6 +176,29 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202212212335235_DeleteField.resx">
+      <DependentUpon>202212212335235_DeleteField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212221459234_New.resx">
+      <DependentUpon>202212221459234_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301181730397_Categorias.resx">
+      <DependentUpon>202301181730397_Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301240018364_Update.resx">
+      <DependentUpon>202301240018364_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301272307558_Documents.resx">
+      <DependentUpon>202301272307558_Documents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301272344288_Documents2.resx">
+      <DependentUpon>202301272344288_Documents2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302022034346_UpdateDoc.resx">
+      <DependentUpon>202302022034346_UpdateDoc.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
