@@ -101,7 +101,7 @@ namespace ApiPlatformKPI.Controllers
                     comodin.Comodin = (comodinCajero.Comodin == "") ? "S/C" : comodinCajero.Comodin.ToUpper();
                     comodin.Comentario = (comodinCajero.Comentario == "") ? "N/C" : comodinCajero.Comentario;
                     comodin.Fecha = DateTime.Today;
-                    //comodin.Fecha = DateTime.Today.AddDays(-7);
+                    //comodin.Fecha = DateTime.Today.AddDays(-1);
                     comodin.Intervalo = comodinCajero.Intervalo;
                     comodin.Tienda = Tienda;
                     //comodin.Tienda = 3;
@@ -135,8 +135,8 @@ namespace ApiPlatformKPI.Controllers
 
                     comodin.Comodin = (auxDeli.Comodin == "") ? "S/C" : auxDeli.Comodin.ToUpper();
                     comodin.Comentario = (auxDeli.Comentario == "") ? "N/C" : auxDeli.Comentario;
-                    comodin.Fecha = DateTime.Today;
-                    //comodin.Fecha = DateTime.Today.AddDays(-2);
+                    //comodin.Fecha = DateTime.Today;
+                    comodin.Fecha = DateTime.Today.AddDays(-1);
                     comodin.Intervalo = auxDeli.Intervalo;
                     comodin.Tienda = Tienda;
                     //comodin.Tienda = 4;
